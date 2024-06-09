@@ -1,0 +1,5 @@
+PS C:\Users\sahil\my_programs\devopswithdocker\part1> docker run -d -it --name 1.4 ubuntu sh -c "while true; do echo 'Input website:'; read website; echo 'Searching..'; sleep 1; curl http://$website; done"
+
+PS C:\Users\sahil\my_programs\devopswithdocker\part1> docker exec -it 1.4 apt-get update
+
+docker exec -it 1.4 apt-get install -y curl
